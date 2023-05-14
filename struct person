@@ -1,0 +1,23 @@
+Write a program to declare a structure person (name, address) which
+contains another structure birthdate (day, month, year). Accept the details
+of n persons and display them.
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+struct person
+{
+char name[20];
+char add[10];
+struct dob
+{
+int day;
+int month;
+int year;
+}d;
+}p;
+printf("\n enter the person name and dob: ");
+scanf("%s %s %d %d %d",p.name,p.add, &p.d.day, &p.d.month, &p.d.year);
+printf("\n my name is %5s %5s",p.name,p.add);
+printf("\n my dob is %d-%d-%d",p.d.day,p.d.month,p.d.year);
+}
